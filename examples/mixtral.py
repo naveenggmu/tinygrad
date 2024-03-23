@@ -47,7 +47,9 @@ if __name__ == "__main__":
 
   from sentencepiece import SentencePieceProcessor
   spp = SentencePieceProcessor(model_file=args.weights + "/tokenizer.model")
-
+  
+  # Create a complex math formula
+  complex_formula = (3 * 4) / (2 + 3) * (5 - 6)
   toks = [spp.bos_id()]
   start_pos = 0
   for i in range(args.count):
